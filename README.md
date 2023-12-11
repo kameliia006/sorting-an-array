@@ -1,5 +1,6 @@
-# sorting-an-array
- # mips
+
+ sorting-an-array
+ mips
  
 .data
 A: .space 200
@@ -134,7 +135,7 @@ syscall       # afficher msg
 
 
     li $s1, 0   # j=0
-
+    
 for5:  # for (J=0; J<N; J++)
     bge $s1, $s3, exit
 
@@ -164,15 +165,13 @@ exit:
 #include <stdio.h>
 main()
 {
-/* Déclarations */
-int A[50];/*tableau donné */
-int N; /*dimension */
-int I; /* indice élément tableau */
-int J; /* indice élément tableau */
-int AIDE; /* pour la permutation */
-int PMAX; /* indique la position de l'élément */
-/* maximal à droite de A[I] */
-/* Saisie des données */
+int A[50];
+int N;
+int I; 
+int J; 
+int AIDE; 
+int PMAX;
+
 printf("Dimension du tableau (max.50) : ");
 scanf("%d", &N );
 for (J=0; J<N; J++)
